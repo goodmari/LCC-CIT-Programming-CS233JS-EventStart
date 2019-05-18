@@ -60,16 +60,6 @@ module.exports = {
     hot: true,
   },
   optimization: {
-    runtimeChunk: false,
-    splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
