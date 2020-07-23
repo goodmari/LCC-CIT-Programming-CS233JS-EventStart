@@ -29,7 +29,7 @@ class Status {
    Then TEST.  The experience chart should work at this point. */
   loadData() {
     /* Make an api call. Because it's a get request with no data,
-       the only parameter is '/statistics'.
+       the only parameter is 'statistics'.
        When the Promise returns successfully
           set statisticsData to the data that's returned
           hide the loading indicator

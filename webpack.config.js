@@ -9,7 +9,7 @@ const glob = require('glob-all');
 // const PurifyCSSPlugin = require('purifycss-webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 /**
  * flag Used to check if the environment is production or not
@@ -59,6 +59,7 @@ module.exports = {
     port: 8080,
     hot: true,
   },
+  /*
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
@@ -68,6 +69,7 @@ module.exports = {
       })
     ]
   },
+  */
   module: {
     rules: [
       {
